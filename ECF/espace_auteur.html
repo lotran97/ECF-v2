@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Espace Auteur</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="corp">
+		<div class="header">
+			<div class="inheader">
+				<a href="Acceuil.html"><h1>Bbiblio</h1></a>
+			</div>
+
+			<ul class="navigation">
+				<a href="bibli.html"><li>Bibliothèque</li></a>
+				<a href="historique.html"><li>Historique</li></a>
+				<a href="connexion.html"><li>Connexion</li></a>
+			</ul>
+		</div>
+		
+		<div class="sous_header"></div><br>
+
+		<img src="images/logo_jury.png" width="150px" height="150px"  align="center">
+		<hr size="2px" color="black"><br><br><br>
+
+
+		<div id="section_form">
+			<h3>Soumettre une oeuvre</h3>
+			
+			
+			
+				<form align="center" id="soumission_oeuvre">   
+					<fieldset>    
+						   
+							<label>Auteur:<br>
+								<input type="text" name="nom" pattern="[A-Za-z]+"></label><br><br> 
+							
+							<label>Catégorie</label><br><br> 
+								<p>    
+									<input type="radio"  name="catégorie" id="roman_fr" checked="checked"><span id="caté">Romans français</span><br>
+									<input type="radio"  name="catégorie" id="roman_etr"><span id="caté">Romans étrangers</span><br>
+									<input type="radio"  name="catégorie" id="docu"><span id="caté">Documentaires</span><br>
+									<input type="radio"  name="catégorie" id="bio"><span id="caté">Biographies</span><br> 
+								</p>
+										<br><br>
+										<p><i>Selectionnez le format pdf de votre oeuvre</i></p><br>
+										<input type="file" accept="application/pdf" id="oeuvrePdf">
+										<br><br> 
+
+							<label for="comments">      
+							Commentaires     
+							</label>     
+							<br />     
+							<textarea rows="4" cols="40" id="comments"></textarea>   
+							 
+							 <br>
+
+					<input type="submit" name="envoi_oeuvre" value="Envoyer" id="envoi_oeuvre">
+						<p id="erreur"></p>
+
+					</fieldset>
+						
+				</form>  
+			
+				<br />
+				 	 
+		</div>
+
+	</div>
+
+		<footer>
+			<a href="contact.html"class="contact">Contactez-nous</a>
+			<a href="https://www.instagram.com"><img src="images/instalogo1.png" height="50px" width="50px" align="right"></a>
+			<a href="https://www.facebook.com/login?lang=fr/"><img src="images/fblogo1.png" height="50px" width="50px" align="right">
+			<a href="https://twitter.com/login?lang=fr"><img src="images/logotwitter1.png" height="50px" width="50px" align="right">
+		</footer>
+<script src="js/espace_auteur.js"></script>
+</body>
+</html>

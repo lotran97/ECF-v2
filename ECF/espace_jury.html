@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Espace Jury</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="corp">
+		<div class="header">
+			<div class="inheader">
+				<a href="Acceuil.html"><h1>Bbiblio</h1></a>
+			</div>
+
+			<ul class="navigation">
+				<a href="bibli.html"><li>Bibliothèque</li></a>
+				<a href="historique.html"><li>Historique</li></a>
+				<a href="connexion.html"><li>Connexion</li></a>
+			</ul> 
+		</div>
+
+		<div class="sous_header">
+			
+		</div>
+		<img src="images/border5.png" height="80px" width="100%" /><br>
+		<img src="images/logo_jury.png" width="150px" height="150px"  align="center">
+		<hr size="2px" color="black">
+
+
+		
+		<div class="section_jury">
+			<fieldset id="choix_cat">
+				<legend><span id="cats">Choisissez les catégories que vous souhaitez noter</span></legend><br>
+
+				<input type="checkbox" class="catégorie" name="catégorie" id="roman_fr" checked><span id="cat">Romans français</span><br><br>
+				<input type="checkbox" class="catégorie" name="catégorie" id="roman_etr"><span id="cat">Romans étrangers</span><br><br>
+				<input type="checkbox" class="catégorie" name="catégorie" id="docu"><span id="cat">Documentaires</span><br><br>
+				<input type="checkbox" class="catégorie" name="catégorie" id="bio"><span id="cat">Biographies</span><br><br>
+				<input type="button" id="confirmer" value="Confirmer"><br>
+				
+			</fieldset>
+			<br><br><br><br>
+
+			<h2 align="left">Oeuvres notées par le juré</h2><br>
+			<a><img src="images/livre2.jpg" height="120px" width="90px" align="left" id="tableau_roman1"></a>
+			<a><img src="images/livre6.jpg" height="120px" width="90px" align="left" id="tableau_roman2"></a>
+			<a><img src="images/livre5.jpg" height="120px" width="90px" align="left" id="tableau_docu"></a>
+			<a><img src="images/livre1.jpg" height="120px" width="90px" align="left" id="tableau_bio"></a>
+
+			</div>
+
+
+			          <table  id="tableau1" cellspacing="15px">
+                    <caption>Dernières notes des romans français</caption>
+                    <thead>
+                        <tr>
+                            <th>Oeuvre</th>
+                            <th>Style</th>
+                            <th>Illustration</th>
+                            <th>Mise en page</th>
+                            <th>Emotion</th>
+                            <th>Moyenne</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Livre 1</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <th>7.5</th>
+                           
+                        </tr>
+                        <tr>
+                            <td>Livre 2</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <th>5.5</th>
+                           
+                        </tr>
+                        <tr>
+                            <td>Livre 3</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <th>7.75</th>
+                            
+                        </tr>
+                        <tr>
+                           <td>Livre 4</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <th>6.5</th>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                <table  id="tableau2" cellspacing="15px">
+                    <caption>Dernières notes des romans étrangers</caption>
+                    <thead>
+                        <tr>
+                            <th>Oeuvre</th>
+                            <th>Style</th>
+                            <th>Illustration</th>
+                            <th>Mise en page</th>
+                            <th>Emotion</th>
+                            <th>Moyenne</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Livre 1</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <th>6.25</th>
+                           
+                        </tr>
+                        <tr>
+                             <td>Livre 2</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <th>6.5</th>
+                           
+                        </tr>
+                        <tr>
+                           <td>Livre 3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <th>7.5</th>
+                            
+                        </tr>
+                        <tr>
+                           <td>Livre 4</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <th>7.75</th>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+			
+                <br>
+
+			  <table  id="tableau3" cellspacing="15px">
+                    <caption>Dernières notes des documentaires</caption>
+                    <thead>
+                        <tr>
+                            <th>Oeuvre</th>
+                            <th>Style</th>
+                            <th>Illustration</th>
+                            <th>Mise en page</th>
+                            <th>Emotion</th>
+                            <th>Moyenne</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                             <td>Livre 1</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>5</td>
+                            <th>6.5</th>
+                           
+                        </tr>
+                        <tr> <td>Livre 2</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <th>7.75</th>
+                           
+                        </tr>
+                        <tr>
+                             <td>Livre 3</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <th>6.25</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Livre 4</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <th>7.5</th>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                  <table  id="tableau4" cellspacing="15px">
+                    <caption>Dernières notes des biographies</caption>
+                    <thead>
+                        <tr>
+                            <th>Oeuvre</th>
+                            <th>Style</th>
+                            <th>Illustration</th>
+                            <th>Mise en page</th>
+                            <th>Emotion</th>
+                            <th>Moyenne</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                             <td>Livre 1</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <th>6.25</th>
+                           
+                        </tr>
+                        <tr>
+                             <td>Livre 2</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <th>6.25</th>
+                           
+                        </tr>
+                        <tr>
+                             <td>Livre 3</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <th>6.25</th>
+                            
+                        </tr>
+                        <tr>
+                             <td>Livre 4</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <th>6.25</th>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+		
+		
+			
+</div>
+		<footer>
+			<a class="contact" href="contact.html">Contactez-nous</a>
+			<a href="https://www.instagram.com"><img src="images/instalogo1.png" height="50px" width="50px" align="right"></a>
+			<a href="https://www.facebook.com/login?lang=fr/"><img src="images/fblogo1.png" height="50px" width="50px" align="right">
+			<a href="https://twitter.com/login?lang=fr"><img src="images/logotwitter1.png" height="50px" width="50px" align="right">
+		</footer>
+	<script src="js/espace_jury.js"></script>
+</body>
+</html>

@@ -1,0 +1,908 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body, html{
+	height:100%;
+}
+
+body{
+	background:url("images/fond_papier.jpg");
+	margin:0px;
+	text-align: center;
+}
+
+.corp{
+	position: relative;
+	max-width:100%;
+	min-height:100%;
+	margin:0 auto;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.header1{
+	width:100%;
+    height:600px;
+    display:block;
+   background-image:url("images/fond_header1.png"); 
+   box-shadow: 10px 5px 5px black;
+   
+}
+
+
+
+.header{
+	width:100%;
+    height:150px;
+    display:block;
+    background-image:url("images/fond_cuir2.png"); 
+    border-bottom: 2px solid black; 
+   
+}
+
+/*.inheader{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}*/
+.inheader1{
+	position: relative;
+	width: 100%;
+	height: 95%;
+}
+.inheader1 h1{
+	
+	float:left;
+	color:white;
+	font-family: 'Lobster Two', cursive;
+	font-size: 70px;
+	position:absolute;
+	top:10%;
+	left:5%;
+
+}
+
+.inheader h1{
+	display:table;
+	float:left;
+	color:white;
+	font-family: 'Lobster Two', cursive;
+	font-size: 55px;
+	position:absolute;
+	top:25px;
+	left:25px;
+
+}
+
+
+
+
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 30px;
+
+}
+
+h2{
+	font-family: 'Lobster', cursive;
+}
+
+.sous_header{
+	width:100%;
+    height:12px;
+    display:block;
+    background: #f1b54f;
+    box-shadow: 10px 5px 5px black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+	
+
+}
+
+
+.navigation1 a{
+
+	padding: 0px 20px;
+}
+	
+
+.navigation1 a li{
+	display: table-cell;
+	height:100%;
+	color:white;
+	font-family: 'Lobster', cursive;
+	font-size: 35px;
+	padding: 0px 20px;
+
+}
+
+.navigation{
+	float: right;
+	height: 100%;
+	list-style-type: none;
+	top: 10%;
+	position: relative;
+}
+
+.navigation a{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+	top:200px;
+}
+
+.navigation a li{
+	display: table-cell;
+	vertical-align: top;
+	height:100%;
+	color:white;
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+li:hover{
+	animation: pulse 1s;
+}
+
+a{
+	text-decoration: none;
+}
+
+.presentation{
+	font-size: 25px;
+}
+
+.infos{
+	font-size: 25px;
+}
+
+#h1news{
+	position: relative;
+	top: 70px;
+}
+.slider{
+	margin:0 auto;
+	margin-top: 100px;
+	position: relative;
+	width: 80%;
+	height: 0;
+	padding-bottom: 40%;
+	background: #4c4c4c;
+	border: solid 10px black;
+}
+
+.img_slider{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+}
+
+.img_slider img{
+	width: 100%;
+	height: 100%;
+}
+
+#img1, #img2, #img3{
+	display: none;
+}
+
+.pre, .nxt{
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: grey;
+	opacity: 0.3;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.pre{
+	left: 0;
+}
+
+.nxt{
+	right: 0;
+}
+
+.nav{
+	width: 100%,
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+
+.dots{
+	top: 25px;
+	left: 380px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: grey;
+
+}
+
+#img1:checked ~ #one,
+#img2:checked ~ #two,
+#img3:checked ~ #three{
+	z-index: 9;
+}
+
+#img1:checked ~ .nav #dot1,
+#img2:checked ~ .nav #dot2,
+#img3:checked ~ .nav #dot3{
+	background:white;
+}
+
+
+.section{
+	
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 7%;
+	margin-bottom: 10%;
+	position: relative;
+}
+
+.section img:hover{
+	animation: pulse 1s;
+}
+
+#section_form{
+	text-align: center;
+}
+
+.section_categories{
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 7%;
+	margin-bottom: 10%;
+}
+
+.section_admin{
+	margin-left:5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	width: 20%;
+}
+
+.interface{
+	vertical-align: top;
+	margin-bottom: 15%;
+}
+
+
+hr{
+	margin-right: 20%;
+	margin-left:20%;
+}
+footer{
+	background:url("images/fond_cuir.png");
+	bottom:0;
+	left: 0; 
+	right: 0;
+	width:100%;
+	padding-top:auto;
+	height:100px;
+	margin-top: auto;
+	position: relative;
+	box-shadow: 10px 5px 5px black;
+
+	
+	
+}
+.contact{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 25px 40px;
+	color:white;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	position:absolute;
+	top: auto;
+}
+
+.table{
+	position: relative;
+	top: 5%
+	left:5%;
+}
+#identification{
+	float: left;
+	position: relative;
+	display: block;
+	
+	background:#F0E68C;
+
+}
+
+.btn_connexion{
+	width: 120px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+
+#mdp_oublié{
+	font-size: 12px;
+	position: relative;
+	top: -10px;
+	left: 20%;
+}
+
+#admin{
+	position: relative;
+	
+	left: 15px;
+}
+
+
+.informations{
+	text-align: left;
+	vertical-align: top;
+	margin-right: 15px;
+	margin-left: 15px;
+	background:#F0E68C;
+	height: 150px;
+	border-bottom: 4px solid black;
+	border-left: 4px solid black;
+	padding: 25px;
+	border-bottom-left-radius: 20px;
+	position: relative;
+	top: 0%;
+}
+
+
+#connexion_public{
+	position: relative;
+	left: 0px;
+}
+
+
+
+#user{
+	width: 300px;
+	height: 35px;
+	border-radius: 10px;
+}
+
+#mdp{
+	width: 300px;
+	height: 35px;
+	border-radius: 10px;
+}
+
+form{
+	width: 550px;
+	position: relative;
+	left: 260px;
+}
+
+
+	
+}
+
+legend {
+color: maroon;
+}
+label {
+color: black;
+font-family: 'Lobster', cursive;
+}
+
+
+fieldset {
+	width: 550px;
+	text-align: center;
+	background : #FDCC56;
+	border: solid black;
+
+}
+
+input{
+	border: none;
+}
+
+.envoi_mail{
+	text-align: left;
+	vertical-align: top;
+	margin-right:15px;
+	margin-left: 15px;
+	background:#F0E68C;
+	height: 205px;
+	width: 550px;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	padding: 7px;
+	position: relative;
+	top: 265px;
+	left: -2%;
+	
+}
+
+.envoi_mail1{
+	text-align: left;
+	vertical-align: top;
+	height: 180px;
+	width: 310px;
+	position: absolute;
+	top: 0px;
+	left:240px;
+}
+
+#btn_envoimail{
+	position: relative;
+	left: 37%;
+	top: 30px;
+}
+
+#envoyer_mail{
+	position: relative;
+	left: 0px;
+}
+.petit{
+	font-size: 13px;
+}
+
+#btn_envoi{
+	position: absolute;
+	top:185px;
+	left:170px;
+	border-radius: 10px;
+	width:50px;
+}
+
+#btn_effacer{
+	position: absolute;
+	top:185px;
+	left:230px;
+	border-radius: 10px;
+	width:50px;
+}
+
+.contacts{
+	text-align: center;
+	vertical-align: top;
+	margin-right:15px;
+	margin-left: 15px;
+	background:#F0E68C;
+	height: 200px;
+	width: 270px;
+	padding: 20px;
+	position: relative;
+	top: 20px;
+	left: 70%;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.police{
+	font-family: 'Lobster', cursive;
+	font-size: 23px;
+}
+
+.gagnants2019{
+	text-align: center;
+	vertical-align: top;
+	margin-right:15px;
+	margin-left: 15px;
+	background:#F0E68C;
+	height: 200px;
+	width: 90%;
+	padding: 20px;
+	position: relative;
+	top: 50px;
+	border: 5px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.gagnants2019 img{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.gagnants2019 .a1{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:55px;
+}
+
+.gagnants2019 .a2{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:250px;
+}
+
+.gagnants2019 .a3{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:450px;
+}
+
+.gagnants2019 .a4{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:650px;
+}
+
+
+
+.gagnants2018{
+	text-align: center;
+	vertical-align: top;
+	margin-right:15px;
+	margin-left: 15px;
+	margin-top: 65px;
+	background:#F0E68C;
+	height: 200px;
+	width: 90%;
+	padding: 20px;
+	position: relative;
+	top: 50px;
+	border: 5px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.gagnants2018 img{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.gagnants2018 .a1{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:55px;
+}
+
+.gagnants2018 .a2{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:250px;
+}
+
+.gagnants2018 .a3{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:450px;
+}
+
+.gagnants2018 .a4{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:650px;
+}
+
+.gagnants2017{
+	text-align: center;
+	vertical-align: top;
+	margin-right:15px;
+	margin-left: 15px;
+	margin-top: 65px;
+	background:#F0E68C;
+	height: 200px;
+	width: 90%;
+	padding: 20px;
+	position: relative;
+	top: 50px;
+	border: 5px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.gagnants2017 img{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.gagnants2017 .a1{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:55px;
+}
+
+.gagnants2017 .a2{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:250px;
+}
+
+.gagnants2017 .a3{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:450px;
+}
+
+.gagnants2017 .a4{
+	font-size: 10px;
+	position: absolute;
+	top:220px;
+	left:650px;
+}
+
+
+#meilleur_livre{
+	position: relative;
+	top: 0%;
+	left: -8%;
+	display: inline-block;
+}
+
+.resumé{
+	position: relative;
+	background:url("images/resumé.png");
+	width: 55%;
+	height: 320px;
+	left:20px;
+	top:-155px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.resumé1{
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	font-style: italic;
+	font-size: 15px;
+	font-family: 'Lobster', cursive;
+}
+.liste{
+	position: absolute;
+	list-style-type: none;
+	display: inline-block;
+	top: 300px;
+	left: 280px;
+	text-align: left;
+}
+
+.cadre{
+	position: relative;
+	background:url("images/fond_cuir.jpg");
+	width: 35%;
+	height: 370px;
+	left:33%;
+	top:55%;
+	display: block;
+	border-radius: 70px;
+	border: 3px solid black;
+}
+
+#photo{
+	top:40px;
+	border-radius: 70px;
+	position: relative;
+	border: 1px solid black;
+
+}
+
+
+
+.biographie{
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family: 'Lobster', cursive;
+	position: relative;
+}
+
+#acheter{
+	position: relative;
+	top: 250px;
+	left: -180px;
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+
+}
+
+#bibli td{
+	position: relative;
+	left: 35px;
+
+}
+
+#bibli td p{
+	position: relative;
+	top: -200px;
+}
+
+#bibli td img{
+	box-shadow: 10px 5px 5px black;
+}
+
+#bibli a{
+	font-family: 'Lobster', cursive;
+	color: gold;
+	font-size: 25px;
+
+}
+
+#bibli img:hover{
+	animation: pulse 1s;
+}
+
+.section_perso{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.section_perso ul{
+	margin-left: 7%;
+	margin-top: 2%;
+}
+
+#erreur{
+	color: red;
+	font-size: 12px;
+}
+
+#erreur_mail{
+	color: red;
+	font-size: 12px;
+}
+
+#etoile_rouge{
+	color:red;
+}
+
+#champ_obligatoire{
+	color: red;
+	font-size: 10px;
+	position: absolute;
+	top: 31%;
+	left: 65%;
+
+}
+
+.section_jury{
+	margin-left:30%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	position: relative;
+}
+
+.section_jury img:hover{
+	animation: pulse 1s;
+}
+
+.section_jury .liens{
+	display: table-cell;
+	height:100%;
+	color:maroon;
+	font-family: 'Lobster', cursive;
+	font-size: 12px;
+	padding: 0px 3px;
+	list-style-type: none;
+	
+}
+
+.liens_oeuvres{
+	position: relative;
+	top: 65px;
+	left: -323px;
+}
+
+.section_bibli{
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 3%;
+	margin-bottom: 10%;
+	position: relative;
+	height: 80%;
+	width: 80%;
+}
+
+footer img{
+	position: relative;
+	top: 20px;
+}
+
+#Mdp{
+	width: 45%;
+	height: 35px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#NewMdp{
+	width: 45%;
+	height: 35px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#NewMdp2{
+	width: 45%;
+	height: 35px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#cat{
+	font-family: 'Lobster', cursive;
+	font-size: 18px;
+	color: maroon;
+}
+
+#cats{
+	font-family: 'Lobster', cursive;
+	font-size: 23px;
+}
+
+input:hover{
+	background-color:lightgreen;
+}
+
+#section_form1{
+	margin-left: 10%;
+}
+
+#btn_envoi{
+	margin-top: 7%;
+	margin-left: 12%;
+	width: 80px;
+	height: 25px;
+}
+
+#caté{
+	font-size: 12px;
+}
+
+#tableau1, #tableau2, #tableau3, #tableau4{
+	margin-left: 20%;
+	display: none;
+	width: 610px;
+	border: 1px black solid;
+	background: #FDCC56;
+}
+
+
+
+
+caption{
+	color: maroon;
+	font-style: italic;
+}

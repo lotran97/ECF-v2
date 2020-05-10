@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulaire Jury</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+	<div class="corp">
+		<div class="header">
+			<div class="inheader">
+				<a href="Acceuil.html"><h1>Bbiblio</h1></a>
+			</div>
+
+			<ul class="navigation">
+				<a href="bibli.html"><li>Bibliothèque</li></a>
+				<a href="historique.html"><li>Historique</li></a>
+				<a href="connexion.html"><li>Connexion</li></a>
+			</ul>
+		</div>
+		
+		<div class="sous_header"></div><br>
+
+
+		<div id="section_form">
+			<h1>Formulaire d'adhésion Jury</h1>
+			<img src="images/border5.png" height="80px" width="100%" />
+			
+			
+				<form align="center" id="inscription_jury">   
+						<fieldset>     
+							<label><span id="etoile_rouge">*</span>Nom:<input type="text" id="nom"></label><br><br> 
+							<label><span id="etoile_rouge">*</span>Prénom:<input type="text" id="prenom"></label><br><br>  
+							<label><span id="etoile_rouge">*</span>Téléphone:<input type="tel" id="tel" pattern="[0-9]{10}"></label><br><br>  
+							<label><span id="etoile_rouge">*</span>Email:<input type="email" id="email"></label><br><br>
+							<label><span id="etoile_rouge">*</span>Confirmation-Email:<input type="email" id="confirmation_email"></label>
+							<br><input type="submit" name="envoyer" value="Envoyer">
+							<br><p id="erreur"></p><p id="erreur_mail"></p><br> 
+					</fieldset> 
+				</form>  
+				<br /> 	 
+		</div>
+
+	</div>
+
+		<footer>
+			<a href="contact.html"class="contact">Contactez-nous</a>
+			<a href="https://www.instagram.com"><img src="images/instalogo1.png" height="50px" width="50px" align="right"></a>
+			<a href="https://www.facebook.com/login?lang=fr/"><img src="images/fblogo1.png" height="50px" width="50px" align="right">
+			<a href="https://twitter.com/login?lang=fr"><img src="images/logotwitter1.png" height="50px" width="50px" align="right">
+		</footer>
+<script src="js/formulaire_jury.js"></script>
+</body>
+</html>
